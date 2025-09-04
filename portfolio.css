@@ -6,7 +6,7 @@ html, body{
 
 header{
 	flex-basis: 50.0%;
-	margin-bottom: 0.625em;
+	margin-bottom: 0em;
 	padding-left: 3.125em;
 	font-family: 'Trebuchet MS', sans-serif;
 }
@@ -127,11 +127,11 @@ footer p{
 
 #aboutContent{
 	flex-basis: 70%;
-	padding: 2.0em;
+	padding: 2.0em 1.0em 2.0em 2.0em;
 }
 
 #about{
-	margin: 3em 6em 3em 6em;
+	margin: 1em 6em 3em 6em;
 	background-color: #58A4B0;
 	border-radius: 20px;
 }
@@ -144,15 +144,27 @@ footer p{
 }
 
 #about p{
-	font-size: 1.75em;
+	font-size: 1.10em;
 	/*padding: 0.5em;*/
 }
 
 #aboutAndPhoto img{
-	padding: 2em;
+	padding: 2.0em;
 	border-radius: 50px;
 	max-width: 20%;
 	height: auto;
+}
+
+#aboutContent p a:link{
+	color:#000000
+}
+
+#aboutContent p a:visited{
+	color:#000000
+}
+
+#aboutContent p a:hover{
+	color: #F08080;
 }
 
 #skills{
@@ -469,7 +481,7 @@ footer p{
  	grid-template-columns: repeat(2, 1fr);
  	grid-gap: 80px;
  	align-items: center;
- 	justify-itens: center;
+ 	justify-items: center;
  	padding: 3em 4em 3em 4em;
  }
 
@@ -522,7 +534,7 @@ footer p{
 	margin-right: 0;
  }
 
- #spaghetti{
+ #asl{
  	background-color: #58A4B0;
 	border-radius: 15px;
 	padding: 1em;
@@ -544,84 +556,6 @@ footer p{
  }
 
  #photography{
- 	background-color: #58A4B0;
-	border-radius: 15px;
-	padding: 1em;
-	margin-right: 0;
- }
-
-
- /*miscellaneous css styling*/
-
-#miscGrid{
- 	display: grid;
- 	grid-template-columns: repeat(2, 1fr);
- 	grid-gap: 80px;
- 	align-items: center;
- 	justify-itens: center;
- 	padding: 3em 4em 3em 4em;
- }
-
-#miscGrid img{
-	border-radius: 15px;
-	margin-bottom: 1em;
-	max-width: 75%;
-	height: auto;
-}
-
-#miscGrid h2{
-	text-align: center;
-	text-decoration: underline;
-}
-
-#miscGrid figure{
-	display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    text-align: center;
-    margin: 0; 
-}
-
-#miscGrid figcaption{
-	font-size: 1.2em;
-}
-
-#miscGrid a:link{
-	color: #FFFFFF;
-}
-
-#miscGrid a:visited{
-	color:#FFFFFF;
-}
-
-#miscGrid a:hover{
-	color: #F08080;
-}
-
-
-#video{
- 	background-color: #58A4B0;
-	border-radius: 15px;
-	padding: 1em;
-	margin-right: 0;
- }
-
- #office{
- 	background-color: #58A4B0;
-	border-radius: 15px;
-	padding: 1em;
-	margin-right: 0;
- }
-
- #drone{
- 	background-color: #58A4B0;
-	border-radius: 15px;
-	padding: 1em;
-	margin-right: 0;
- }
-
- #piano{
  	background-color: #58A4B0;
 	border-radius: 15px;
 	padding: 1em;
