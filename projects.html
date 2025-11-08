@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>AG Portfolio</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="portfolio.css" rel="stylesheet">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+	</head>
+
+	<body>
+		<div id="navAndHeader">
+			<header>
+				<h1>Abhinav Goel</h1>
+				<h3>Digital Portfolio</h3>
+			</header>
+
+			<nav>
+				<ul>
+					<li class="spacing"><a href="index.html">Home</a></li>
+					<li class="spacing"><a href="projects.html">Projects</a></li>
+					<li><a href="https://drive.google.com/file/d/1NodWMVTBgXCRxyNlvXlHgzOGb2V_o_k8/view?usp=drive_link">Resume</a></li>
+				</ul>
+			</nav>
+		</div>	
+
+		<main>
+			<div id="projectGrid">
+				
+				<div id="isoform">
+					<h2>Contrastive Learning - RNA Sequence Relation</h2>
+					<figure>
+						<img src="isoform.jpg" alt="rna sequence photo">
+						<figcaption>Conducting research on RNA Sequence relation using unsupervised Contrastive Learning frameworks. The frameworks aim to bring positive embeddings (related sequences) closer together and push negative embeddings (unrelated sequences) farther apart within contrastive space. Additionally, conducting research on isoform quantification within RNA samples using a Bayesian hierarchical model evaluating both short-read and long-read sequences.</figcaption>
+					</figure>
+				</div>
+
+				<div id="smartContract">
+					<h2>Agentic AI Research - Smart Contracts</h2>
+					<figure>
+						<img src="smartContract.jpg" alt="smart contract photo">
+						<figcaption>Invoking AI Agents to interact with smart contracts - digital self-executing contracts stored on blockchain that can be automatically run when conditions are met, removing the need for a third-party intermediary (lawyer). Creating a multi-agent framework and implementing LLMs to automate natural language to Solidity conversion and endpoint execution. Utilizing FastMCP servers, Pydantic Schemas, transduction, and agentics.</figcaption>
+					</figure>
+				</div>
+
+				<div id="aquas">
+					<h2>AQUAS Dashboard</h2>
+					<figure>
+						<img src="aquas.png" alt="aquas dashboard photo">
+						<figcaption>AQUAS is a robotics team at Columbia University focused on creating an autonomous robot to detect and treat algal blooms in water bodies. Currently devloping a full-stack data dashboard for displaying robot telemetry, visualizations, and key statistics (data sent from robot sensors). Dashboard consists of an authentication system, Postgresql queries, Fast API endpoints, useful visualizations, and clean design.</figcaption>
+					</figure>
+				</div>
+
+				<div id="asl">
+					<h2><a href="https://drive.google.com/drive/folders/148d5wOglpFRP0P9nSF48DA0HdWoxlpow?usp=sharing">ASL Translation and Detection Model</a></h2>
+					<figure>
+						<img src="asl.jpg" alt="ASL sign photo used for training">
+						<figcaption>Developed a real-time American Sign Language (ASL) translator using the MobileNetV2 model. Used MediaPipe, TKinter, and OpenCV for real-time hand detection. The model is able to convert hand gestures into both spoken and written English, enabling sentence construction. Pre-processed data by one-hot encoding letter classes and resizing the photos appropriately for the model. User can add and delete letters to create words and pytttsx3 is used to vocalize completed words.
+						</figcaption>
+					</figure>
+				</div>
+
+				<div id="hallpass">
+					<h2>Virtual Hall Pass (WHHS Programming Club)</h2>
+					<figure>
+						<img src="hallpass.png" alt="virtual hallpass project photo">
+						<figcaption>Built and deployed a secure, role-based virtual hall pass system for Walnut Hills High School using Flask, PostgreSQL, and Firebase authentication to manage admin and student logins. Implemented real-time monitoring and analytics dashboards to track hallway activity and pass usage, reducing manual tracking workload by ~80%. The project placed 1st at the University of Cincinnati IT Expo for innovation in digital school management.</figcaption>
+					</figure>
+				</div>
+
+				<div id="pioneer">
+					<h2><a href="https://drive.google.com/drive/folders/1pIK83p5Y7ueJPDf3aFHOkfJJzOzrnVFZ?usp=sharing">Underwater Trash Detection (Pioneer Research)</a></h2>
+					<figure>
+						<img src="pioneer.png" alt="pioneer research photo">
+						<figcaption>Conducted individual research on the optimization of underwater trash detection models. Developed three individual object detection/image classification ML models (Yolov8, Faster-RCNN, custom CNN) and engineered a custom underwater image enhacement algorithm. Compared and analyzed results from the three models in a 20-page research paper.</figcaption>
+					</figure>
+				</div>
+
+				<div id="stanford">
+					<h2><a href="https://drive.google.com/drive/folders/1TtZ4d4xkI1yRHvAzWsKxdb5wxtdQgDmL?usp=sharing">AV Traffic Detection (Stanford AI Program)</a></h2>
+					<figure>
+						<img src="stanford.png" alt="stanford ai project photo">
+						<figcaption>Acquired data from AV Traffic Sign Detection dataset on Kaggle. Pre-processed data by scaling images to adequate dimensions and mounting them to Google Collab via Google Drive. Used Faster-RCNN to train, validate, and test model. Experimented with learning rate, epochs, batch size, kernels, and strides to acquire best performance. Goal of project was to successfully classify and detect 18 distinct traffic signs on the road.</figcaption>
+					</figure>
+				</div>
+				
+
+				<div id="studentperformance">
+					<h2><a href="https://drive.google.com/drive/folders/1VCiPvdAjBd2nFGfGO6f2TaLqYZJOwl3f?usp=sharing">Student Performance Prediction</a></h2>
+					<figure>
+						<img src="studentperformance.png" alt="student performance ai model photo">
+						<figcaption>Created a neural network that used Batch Normalization, ReLU activation, and Softmax to predict the "rating" of a student given the student's grades, extracurriculars, volunteer activities, and parental history. One-hot encoded features so model could train on data. Grade "0" represented best student rating and grade "4" represented the worst student rating. Neural network model achieved 98% accuracy on test data after hyperparameter tuning.</figcaption>
+					</figure>
+				</div>
+
+				<div id="ftc">
+					<h2>FTC Sample Detection</h2>
+					<figure>
+						<img src="ftcsample.png" alt="FTC Game Element - Sample">
+						<figcaption>Designed and optimized a YOLOv8 object detection model to identify and classify FTC Into the Deep game elements based on color, shape, and orientation, achieving 88% detection accuracy. Integrated model outputs into the robot’s autonomous control pipeline to enhance navigation, game element handling, and decision-making efficiency during competition.</figcaption>
+					</figure>
+				</div>
+
+				<div id="photography">
+					<h2><a href="https://abhigoel25.github.io/AAAA-Photography/index.html">AAAA Photograhy Website</a></h2>
+					<figure>
+						<img src="photography.png" alt="aaaa photography website photo">
+						<figcaption>Developed website for Ami Parikh's photography (AAAA Photography). Organized albums into 6 categories: wildlife, food, portraits, landscapes, urban, and landmarks. Implemented linear animations using keyframes and maintained flexbox and grid-like structure throughout website. Media queries were developed for the website to be observable on any device.</figcaption>
+					</figure>
+				</div>
+			</div>
+          
+		</main>
+
+		<footer>
+			<h2 id="footerTitle"><strong>Abhinav Goel Portfolio</strong></h2>
+
+			<ul>
+				<li><a href="https://www.instagram.com/abhinavgoel25/"> <img src="instagramIcon.png" alt="instagram icon" width="50" height="50" class="center"></a></li>
+				<li><a href="mailto:abhinavgoel225@gmail.com"> <img src="mailIcon.png" alt="mail icon" width="50" height="50" class="center"></a></li>
+				<li><a href="https://www.linkedin.com/in/abhinav-goel-041ba8266/"> <img src="linkedinIcon.png" alt="linkedIn icon" width="50" height="50" class="center"></a></li>
+				<li><a href="https://github.com/abhigoel25"><img src="githubIcon.png" alt="github icon" width = "50" height="50" class = "center"></a></li>
+			</ul>
+
+			<strong><a class="namepage" href = "index.html">Home</a> | <a class="namepage" href = "projects.html">Projects</a> | <a class="namepage" href="https://drive.google.com/file/d/1NodWMVTBgXCRxyNlvXlHgzOGb2V_o_k8/view?usp=drive_link">Resume</a></strong>  
+		</footer>
+	</body>
+<html>
