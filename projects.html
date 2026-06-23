@@ -26,21 +26,50 @@
 
 	<main>
 		<div id="projectGrid">
-			
+
+			<div id="humana">
+				<h2>Clinical RAG Chart Prep Platform (Humana)</h2>
+				<figure>
+					<img src="Humana-Logo-Green.jpg" alt="Humana CenterWell Primary Care logo">
+					<figcaption>
+						Built a production-grade multimodal RAG clinical microservices pipeline integrating Athena EHR,
+						Snowflake, Azure FHIR, Redis caching, and Vertex AI endpoints. Developed a React + FastAPI
+						dashboard for clinical summarization, care-gap detection, and vitals trending, deployed through
+						CI/CD to support CenterWell chart-prep workflows.
+					</figcaption>
+				</figure>
+			</div>
+
+			<div id="loomlogic">
+				<h2>
+					<a href="https://www.loomlogic.xyz/" target="_blank" rel="noopener">
+						LoomLogic Garment Classification Platform
+					</a>
+				</h2>
+				<figure>
+					<img src="LoomLogic Logo.png" alt="LoomLogic logo">
+					<figcaption>
+						Optimized a dual-pipeline VLM inference system that parallelizes Gemini API calls for real-time
+						garment classification, reaching sub-4.6 second latency and 97.4% accuracy across 30,000+ brands.
+						Built a Flask backend, React/TypeScript dashboard, and high-value brand lookup with weighted
+						scoring logic, deployed on AWS EC2 for a live NYC pilot.
+					</figcaption>
+				</figure>
+			</div>
+
 			<div id="isoform">
 				<h2>
 					<a href="https://github.com/ArghamitraT/CL_Splicing_Regulation/tree/Abhinav" target="_blank" rel="noopener">
-						Contrastive Learning - RNA Sequence Relation
+						RNA Sequence Modeling - Alternative Splicing
 					</a>
 				</h2>
 				<figure>
 					<img src="isoform.png" alt="RNA sequence research">
 					<figcaption>
-						Developing a hierarchical contrastive learning model that captures functional exon similarity 
-						across species using evolutionary distance, protein context, and multi-modal biological evidence. 
-						Implemented 1D Convolutional Dilated Encoder. The framework aims to bring positive embeddings 
-						(related sequences) closer together and push negative embeddings (unrelated sequences) farther 
-						apart within contrastive space.
+						Developed a 1D Dilated CNN in PyTorch Lightning for alternative splicing prediction, reducing
+						model parameters by 45% while improving prediction accuracy by 12%. Evaluated sequence encoders
+						by integrating the Orthrus RNA BiMamba state-space encoder with attention pooling, extending
+						context range and improving PSI prediction for genomic sequence modeling.
 					</figcaption>
 				</figure>
 			</div>
@@ -54,10 +83,37 @@
 				<figure>
 					<img src="smartContract.jpg" alt="Smart contract AI research">
 					<figcaption>
-						Architected end-to-end full-stack LLM application leveraging Agentics' transduction framework 
-						to convert natural language contracts into verified Solidity smart contracts via Pydantic schemas. 
-						Implemented full-stack React + Flask application automating contract deployment to Ganache testnet 
-						via 7-phase semantic translation pipeline. Submitted research paper to KDD 2026 conference.
+						Created a 7-phase agentic smart contract generation pipeline that converts natural language
+						specifications into Solidity using CrewAI orchestration, Pydantic schema validation, and security
+						refinement loops. Evaluated across 9,000 contracts with 86.54% compilation success. Built SmartEval,
+						a React + Flask benchmark for LLM-generated smart contract quality, with research submitted to
+						KDD 2026 and NeurIPS 2026.
+					</figcaption>
+				</figure>
+			</div>
+
+			<div id="aiExecLabs">
+				<h2>AI Exec Labs Automation Workflows</h2>
+				<figure>
+					<img src="langflow.png" alt="Langflow automation workflow">
+					<figcaption>
+						Designed 20+ automated Langflow pipelines for Columbia AI enterprise workshops, helping business
+						leaders ship automation workflows without engineering experience. Built an AWS S3-backed Smart
+						Information Retrieval System using ChromaDB vector storage, agentic ML pipelines, and email/calendar
+						automation tools for document and structured data analytics.
+					</figcaption>
+				</figure>
+			</div>
+
+			<div id="geAnalytics">
+				<h2>Engine Test Anomaly Detection (GE Aerospace)</h2>
+				<figure>
+					<img src="ge_aerospace.jpg" alt="GE Aerospace aircraft in flight">
+					<figcaption>
+						Engineered a pruning-based optimal partitioning algorithm in Python for multivariate engine-test
+						time-series anomaly detection, achieving 92% accuracy and an estimated $200,000 in fault
+						identification savings. Built scikit-learn and Dask pipelines for high-dimensional sensor data
+						processing, reducing manual diagnostic overhead for aerospace engineers.
 					</figcaption>
 				</figure>
 			</div>
@@ -71,10 +127,10 @@
 				<figure>
 					<img src="aquas.png" alt="AQUAS robotics dashboard">
 					<figcaption>
-						AQUAS is a robotics team at Columbia University focused on creating an autonomous robot 
-						to detect and treat algal blooms in water bodies. Currently developing a full-stack data 
-						dashboard for displaying robot telemetry, visualizations, and key statistics (data sent 
-						from robot sensors). Dashboard consists of an authentication system, PostgreSQL queries, 
+						AQUAS is a robotics team at Columbia University focused on creating an autonomous robot
+						to detect and treat algal blooms in water bodies. Currently developing a full-stack data
+						dashboard for displaying robot telemetry, visualizations, and key statistics (data sent
+						from robot sensors). Dashboard consists of an authentication system, PostgreSQL queries,
 						FastAPI endpoints, useful visualizations, and clean design.
 					</figcaption>
 				</figure>
@@ -89,12 +145,10 @@
 				<figure>
 					<img src="asl.jpg" alt="ASL sign language detection">
 					<figcaption>
-						Developed a real-time American Sign Language (ASL) translator using the MobileNetV2 model. 
-						Used MediaPipe, TKinter, and OpenCV for real-time hand detection. The model is able to 
-						convert hand gestures into both spoken and written English, enabling sentence construction. 
-						Pre-processed data by one-hot encoding letter classes and resizing the photos appropriately 
-						for the model. User can add and delete letters to create words and pyttsx3 is used to 
-						vocalize completed words.
+						Engineered a real-time ASL gesture-to-text system using MobileNetV2, MediaPipe Hands, OpenCV,
+						and Tkinter. Validated the 26-class model with 400+ ASL-reliant users, reaching 95% accuracy
+						and sub-200ms latency. Added sentence construction, letter editing, and pyttsx3 speech output
+						so users can convert hand gestures into written and spoken English.
 					</figcaption>
 				</figure>
 			</div>
@@ -108,9 +162,9 @@
 				<figure>
 					<img src="hallpass.png" alt="Virtual hall pass system">
 					<figcaption>
-						Built and deployed a secure, role-based virtual hall pass system for Walnut Hills High 
-						School using Flask, PostgreSQL, and Firebase authentication to manage admin and student 
-						logins. Implemented real-time monitoring and analytics dashboards to track hallway activity 
+						Built and deployed a secure, role-based virtual hall pass system for Walnut Hills High
+						School using Flask, PostgreSQL, and Firebase authentication to manage admin and student
+						logins. Implemented real-time monitoring and analytics dashboards to track hallway activity
 						and pass usage. The project placed 1st at the University of Cincinnati IT Expo.
 					</figcaption>
 				</figure>
@@ -125,10 +179,10 @@
 				<figure>
 					<img src="pioneer.png" alt="Underwater trash detection research">
 					<figcaption>
-						Conducted individual research on the optimization of underwater trash detection models. 
-						Developed three individual object detection/image classification ML models (YOLOv8, 
-						Faster-RCNN, custom CNN) and engineered a custom underwater image enhancement algorithm. 
-						Compared and analyzed results from the three models in a 20-page research paper.
+						Engineered a full computer vision pipeline benchmarking YOLOv8, Faster R-CNN, and custom CNN
+						architectures for underwater trash detection, achieving 87.2% accuracy with YUV color augmentation.
+						Built a custom preprocessing algorithm using color compensation, Laplace transforms, and CLAHE
+						adaptive histogram equalization, improving low-light detection performance by 15%.
 					</figcaption>
 				</figure>
 			</div>
@@ -142,10 +196,10 @@
 				<figure>
 					<img src="stanford.png" alt="Traffic sign detection AI">
 					<figcaption>
-						Acquired data from AV Traffic Sign Detection dataset on Kaggle. Pre-processed data by 
-						scaling images to adequate dimensions and mounting them to Google Colab via Google Drive. 
-						Used Faster-RCNN to train, validate, and test model. Experimented with learning rate, 
-						epochs, batch size, kernels, and strides to acquire best performance. Goal of project 
+						Acquired data from AV Traffic Sign Detection dataset on Kaggle. Pre-processed data by
+						scaling images to adequate dimensions and mounting them to Google Colab via Google Drive.
+						Used Faster-RCNN to train, validate, and test model. Experimented with learning rate,
+						epochs, batch size, kernels, and strides to acquire best performance. Goal of project
 						was to successfully classify and detect 18 distinct traffic signs on the road.
 					</figcaption>
 				</figure>
@@ -160,10 +214,10 @@
 				<figure>
 					<img src="studentperformance.png" alt="Student performance prediction model">
 					<figcaption>
-						Created a neural network that used Batch Normalization, ReLU activation, and Softmax to 
-						predict the "rating" of a student given the student's grades, extracurriculars, volunteer 
-						activities, and parental history. One-hot encoded features so model could train on data. 
-						Grade "0" represented best student rating and grade "4" represented the worst student 
+						Created a neural network that used Batch Normalization, ReLU activation, and Softmax to
+						predict the "rating" of a student given the student's grades, extracurriculars, volunteer
+						activities, and parental history. One-hot encoded features so model could train on data.
+						Grade "0" represented best student rating and grade "4" represented the worst student
 						rating. Neural network model achieved 98% accuracy on test data after hyperparameter tuning.
 					</figcaption>
 				</figure>
@@ -174,9 +228,9 @@
 				<figure>
 					<img src="ftcsample.png" alt="FTC robotics game element">
 					<figcaption>
-						Designed and optimized a YOLOv8 object detection model to identify and classify FTC Into 
-						the Deep game elements based on color, shape, and orientation, achieving 88% detection 
-						accuracy. Integrated model outputs into the robot's autonomous control pipeline to enhance 
+						Designed and optimized a YOLOv8 object detection model to identify and classify FTC Into
+						the Deep game elements based on color, shape, and orientation, achieving 88% detection
+						accuracy. Integrated model outputs into the robot's autonomous control pipeline to enhance
 						navigation, game element handling, and decision-making efficiency during competition.
 					</figcaption>
 				</figure>
@@ -191,9 +245,9 @@
 				<figure>
 					<img src="photography.png" alt="AAAA Photography website">
 					<figcaption>
-						Developed website for Ami Parikh's photography (AAAA Photography). Organized albums into 
-						6 categories: wildlife, food, portraits, landscapes, urban, and landmarks. Implemented 
-						linear animations using keyframes and maintained flexbox and grid-like structure throughout 
+						Developed website for Ami Parikh's photography (AAAA Photography). Organized albums into
+						6 categories: wildlife, food, portraits, landscapes, urban, and landmarks. Implemented
+						linear animations using keyframes and maintained flexbox and grid-like structure throughout
 						website. Media queries were developed for the website to be observable on any device.
 					</figcaption>
 				</figure>
@@ -229,8 +283,8 @@
 		</ul>
 
 		<div>
-			<a class="namepage" href="index.html">Home</a> | 
-			<a class="namepage" href="projects.html">Projects</a> | 
+			<a class="namepage" href="index.html">Home</a> |
+			<a class="namepage" href="projects.html">Projects</a> |
 			<a class="namepage" href="https://drive.google.com/file/d/13AFvQvqAOzBVIsn1lGoalThMut1Kjxlf/view?usp=drive_link">Resume</a>
 		</div>
 	</footer>
