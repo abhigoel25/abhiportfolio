@@ -263,8 +263,8 @@ main {
 
 #aboutAndPhoto img {
   width: 100%;
+  height: auto;
   max-width: 380px;
-  max-height: 400px;
   object-fit: cover;
   border-radius: 12px;
   border: 2px solid var(--border-color);
@@ -589,7 +589,6 @@ footer p {
   }
 
   #aboutAndPhoto img {
-    max-height: 350px;
     max-width: 350px;
     margin: 0 auto;
   }
