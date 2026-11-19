@@ -76,18 +76,20 @@
 
 			<div id="smartContract">
 				<h2>
-					<a href="https://arxiv.org/abs/2602.13808v1" target="_blank" rel="noopener">
+					<a href="https://arxiv.org/abs/2610.37830" target="_blank" rel="noopener">
 						Agentic AI Research - Smart Contracts
 					</a>
 				</h2>
 				<figure>
-					<img src="images/smartContract.jpg" alt="Smart contract AI research">
+					<img src="images/smartContract.png" alt="Smart contract AI research">
 					<figcaption>
-						Created a 7-phase agentic smart contract generation pipeline that converts natural language
-						specifications into Solidity using CrewAI orchestration, Pydantic schema validation, and security
-						refinement loops. Evaluated across 9,000 contracts with 86.54% compilation success. Built SmartEval,
-						a React + Flask benchmark for LLM-generated smart contract quality, with research submitted to
-						KDD 2026 and NeurIPS 2026.
+						Built an evaluation framework and agentic pipeline for AI-written smart contracts, 
+						measuring whether generated Solidity actually behaves like the contract it should reproduce. 
+						Developed an in-process EVM harness that replays the same transactions on both contracts, 
+						validated grading tools on planted mistakes, and showed that common AI judges and static 
+						analyzers miss obvious errors. Designed an elicitation-first agent that asks clients targeted 
+						questions before coding, raising behavioral fidelity from 39.3% to 72.9% across 500 contracts. 
+						Released a 600-task benchmark, with research submitted to WWW 2027, KDD, and NeurIps.
 					</figcaption>
 				</figure>
 			</div>
